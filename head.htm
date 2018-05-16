@@ -1,0 +1,41 @@
+
+<header>
+  <div id="nav-header" class="container-fluid">
+    <ul>
+      <li class="pull-left"><a href="http://www.z4.com/">南宁&nbsp;&nbsp;&nbsp;多云&nbsp;&nbsp;&nbsp;0°/10°&nbsp;&nbsp;&nbsp;优</a></li>
+      <li class="border-right limit-width" style="margin-right: 13px; float: right; width: 91px; text-align: left; background-image: url({dede:global.cfg_templets_skin/}/images/download_icon.png); background-position: center right; background-repeat: no-repeat;"><a href="http://www.z4.com/plus/list.php?tid=39" target="_blank">Z4 App</a></li>
+      <li class="border-right limit-120 pull-right" style="padding-right: 0; background-color: #2f5621; margin-right: 30px;"><a href="http://www.z4.com/member/index.php" target="_blank">进入邮箱</a></li>
+    </ul>
+  </div>
+</header>
+<div class="nav">
+  <nav>
+    <ul class="tab">
+      <li class="li_img"><a href="http://www.z4.com" target="_blank" title="Z4网站"><img src="{dede:global.cfg_templets_skin/}/images/tom.com-logo.png" alt="tom" style="margin-top: -6px;"></a></li>
+      <li class="nav_active"><a href='{dede:global.cfg_cmsurl/}/'><strong style="font-weight: bold; color:#1c391b;">首页</strong></a></li>
+      {dede:channel type='top' row='16' currentstyle="
+      <li class='nav_active'><a href='~typelink~' ~rel~><span>~typename~</span></a></li>
+      "}
+      <li><a href='[field:typeurl/]' [field:rel/] title="Z4网站[field:typename/]"><span>[field:typename/]</span></a></li>
+      {/dede:channel}
+		
+      <li id="more">更多<span style="top: 3px; margin-left: 5px;"><img src="{dede:global.cfg_templets_skin/}/images/bottom_more_btn.png"></span>
+        <div id="tabIcon">
+          <ul>
+            {dede:channel type='son' noself='yes' typeid='28,0' currentstyle="}
+            <li style="line-height: 36px; margin-top: 0px;"><a href="[field:typelink/]" title="Z4网站">[field:typename/]</a></li>
+            {/dede:channel}
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</div>
+<!-- SEO list
+	//
+	<div style='display:none;position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;'>
+		
+	</div>
+	 -->
+
+<input type="hidden" value="136" id="jsonid" autocomplete="off">

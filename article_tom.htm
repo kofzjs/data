@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<link href="{dede:global.cfg_templets_skin/}/style/contentload.css" rel="stylesheet" type="text/css">
+<link href="{dede:global.cfg_templets_skin/}/style/bootstrap.min_1.css" rel="stylesheet" type="text/css">
+<link href="{dede:global.cfg_templets_skin/}/style/newcontent.css" rel="stylesheet" type="text/css">
+<script src="{dede:global.cfg_templets_skin/}/js/push.js"></script><script type="text/javascript" async="" defer="" src="{dede:global.cfg_templets_skin/}/js/piwik.js"></script><script src="{dede:global.cfg_templets_skin/}/js/push.js"></script><script src="{dede:global.cfg_templets_skin/}/js/hm.js"></script><script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/bootstrap.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/baidutj.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/qrcode.min.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/qrcode.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/caozuo.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/newcontent.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/piwiktj_m.js"></script>
+</head>
+
+<body>
+<noscript>
+&lt;p&gt;&lt;img src="//tongji.tom.com/piwik.php?idsite=26" style="border:0;" alt="" /&gt;&lt;/p&gt;
+</noscript>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jweixin-1.2.0.js"></script> 
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/weixinshare.js"></script> 
+<span class="spinner-loader" id="loadingimg" style="display: none;">Loading…</span> 
+
+<!--导航-->
+
+<input type="hidden" value="0" id="sltop">
+<input type="hidden" value="150" id="jsonid">
+<input type="hidden" value="/tech/" id="category">
+<div class="index_nav"> 
+  <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/daohang.js"></script>
+  <div class="index_nav">
+    <div class="index_nav_left"> <a href="http://www.tom.com/" title="TOM首页" id="shouye" style="padding: 0;">首页</a> <a href="http://news.tom.com/" title="TOM新闻" id="news">新闻</a> <a href="http://ent.tom.com/" title="TOM娱乐" id="ent">娱乐</a> <a href="http://fashion.tom.com/" title="TOM时尚" id="fashion">时尚</a> <a href="http://tech.tom.com/" title="TOM科技" id="tech" >科技</a> <a href="http://sports.tom.com/" title="TOM体育" id="sports">体育</a> <a href="http://auto.tom.com/" title="TOM汽车" target="_blank">汽车</a> <a href="http://baby.tom.com/" title="TOM母婴" id="baby">母婴</a> <a href="http://xiaofei.tom.com/" title="TOM消费" id="xiaofei">消费</a> <a href="http://www.ule.com/special.html?adid=tom_dhtm" title="TOM购物" target="_blank">购物</a> <a href="http://h5game.tom.com/" title="TOM游戏" target="_blank">游戏</a> <a href="http://mail.tom.com/" title="TOM邮箱" id="mail" target="_blank">邮箱</a> <a href="http://life.tom.com/" title="TOM生活" id="life">生活</a> <a href="http://tech.tom.com/201804/1184009349.html" title="" id="a-more">更多&nbsp;<span style="top: 3px; margin-left:5px;"><img src="{dede:global.cfg_templets_skin/}/images/bottom_more_btn2.png"></span> </a>
+      <ul class="nav_more">
+        <a href="http://tech.tom.com/201804/1184009349.html" title="" id="a-more"> </a>
+        <li><a href="http://tech.tom.com/201804/1184009349.html" title="" id="a-more"></a><a href="http://travel.tom.com/" target="_blank" title="TOM旅游">旅游</a></li>
+        <li><a href="http://health.tom.com/" target="_blank" title="TOM健康">健康</a></li>
+        <li><a href="http://joke.tom.com/" target="_blank" title="TOM段子">段子</a></li>
+        <li><a href="http://finance.tom.com/" target="_blank" title="TOM财经">财经</a></li>
+        <li><a href="http://biz.tom.com/" target="_blank" title="TOM商业">商业</a></li>
+        <li><a href="http://tv.tom.com/App_User_Index.php" target="_blank" title="TOM视频">视频</a></li>
+        <li><a href="http://weiqi.sports.tom.com/" target="_blank" title="TOM围棋">围棋</a></li>
+        <li><a href="http://hjsm.tom.com/" target="_blank" title="TOM小说">小说</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+	
+<div class="content_nav" id="content_nav">
+  <div class="content_nav_box"> 
+    <!--二维码-->
+    <div id="qrcode" style="width:200px;height:200px;position:fixed;left:50%;top:50%; display:none;margin-left:-100px;margin-top:-100px;">aaa</div>
+    <a class="back_arrow" id="back_arrow" href="javascript:history.back(-1)"><img src="{dede:global.cfg_templets_skin/}/images/back_arow.png"></a> <a class="back_hot" id="back_hot" href="http://www.z4.com/index.html"><img src="{dede:global.cfg_templets_skin/}/images/back_hot.png"></a> <a class="tom_pc_logo" href='{dede:global.cfg_cmsurl/}/'><img src="{dede:global.cfg_templets_skin/}/images/tom_pc_logo.png"></a> <a class="tom_com_logo"><img src="{dede:global.cfg_templets_skin/}/images/tom_com_logo.png"></a> {dede:type typeid="~typeid~"} <a class="nav_left01" href="[field:typeurl/]/" title="[field:title/]" target="_blank">[field:typename/]</a> {/dede:type} <img src="{dede:global.cfg_templets_skin/}/images/nest_bg.png" class="nav_left02"> <a class="nav_left01">正文</a> <a class="share_btn" name="sharebtn" id="sharebtn" onclick="shareopen()"><img src="{dede:global.cfg_templets_skin/}/images/share_btn.png"></a>
+    <div class="right_search_box" style="display:none;">
+      <input value="">
+      <a class="search_box_btn"><img src="{dede:global.cfg_templets_skin/}/images/search_btn_icon.png"></a> </div>
+  </div>
+</div>
+
+<!--文章内容部分-->
+<div class="content_body_box">
+  <div class="content_body_left" id="content_body_left" style="position: absolute; top: 120px;">
+    <div class="scan_box">
+      <div class="scan_box_text"></div>
+      <div class="scan_box_img" id="scan_box_img" title="http://tech.tom.com/201804/1184009349.html">
+        <canvas width="76" height="76" style="display: none;"></canvas>
+        <img alt="Scan me!" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAABMCAYAAADHl1ErAAAFGElEQVR4Xu1c7ZLaQAyD939obgIkOI4syZvr0IPtrw7kY6OVZcmhvV4ul9ul8ed2exx+vV53Z1Wfx4PWY9bP1mvkz9n1q6Xm9bBHctZa3mcBDC0YnbAsKt+sAmE9n12bAVaBOnIOA7nz7PeNnIB5BbZu1A6witaRVaokMzOcknTY6DDOLUvnefKaJmBPHVZ6lr8fZpgrvlEjVKNAO9/oR1sjcnUVaXK+3wTsIdpbp38bw5T+xZ3LnQ6d2+1eI9bkrQz7SsCUXozsCNIwxR7GOKcTVtdHzFZryd35tA9TIvmRgClmIS9V6RBKAp1j11hUJQp2rZH7dJ79vjY7F6Uru5rVKS9HuCuTG+WiC0Ln+AlYB63MMMUaFr4dMa7iRodZ1TWWz9Vg4Exs286NJTkBe9GtwuJeklVkqQLvKsxxVzOz2RhGbUy8/kgwV1XGnL4aLkzA0kB0CDDWidSOs9ijQjGyLxVbnDjFWI5Y7FQMZNgE7LhNu3mYAsgZ0TgaprTL6bQq9rBuOcLKfM49Gk3Ajt2x0jLLuEaUlShWTEP6xLoz00LEouozxTilq4cBohONJmCv14pwWqFCLPNJTpfsaFl3Iup0WtQ93TXtSlIBhQJu1brj5257d0ZBao0RMFXWyLIoyZmAJdQkYPFFrsMWZR9Y63ZsQ9cYO4xSwq4aw+77CdgDcntgyXzYunsjhq+KNOhzxjz3QRjTWFWoqjqcOwF7/ArJKdu7O0A+zDGUGXkWWZw4gxbNWIo6oLoPEnQp8ulnXROw5u/dYJZ06lrtzFn96/it1UhXZcV0UI21D+tAGjYBe4kBBUx5oBiJKr1AzFKdjt2X6SnqjB0tjMlFpZHtudBvXBkY9oWDWH48YI6HcvWCmUKnC1bsYwFaBfZ4TZU+WuMdJ9WrxS3fq7JC3zs6GgEfqQqnJPPa6ABxAnb8ef3uJYjjdp1jsvCeGbMoeVAlxVw8Yr9qfBOw5OQtwKpw2mn3TJyVBWH3V+d2BpXoPq5x3WxFN0syB1/RXz30nwKs85rNGcOMWAUWpKt7Imb8RjdWett6LzkBe453OkFXOX0EqipJx4Q6UqDYkXUW+TBL9Cdg9T9nPOir86/ZImvUkA7tkLshqOMpHxa1rBPXlFfMjN7uMwF7QKOiGATMYYLqWmhnqu7Fuppy8IjpXQ2L7FUddnuuzms2N+zmhahScUBWYhxZUpWxMqnsGhbDWGdSnS+e+3GA5R2pRjZsVMPKoQtYFGRVzkz0qwQR12OX4jNz7owr8im5DDsPUJWREtj/HjDFACXAuUVXWuAMGyv9UUxg1ufMBh1IhGyF221YE2CO3+20nS72FsAUUKj2lZF19GIkGqGq6A43EcgVGy1b4fikrwasjAPglZnqQCjmsO6b3bZbtg5LHA12Gt59jV0Ncxn1sYA5v6JGnctlgHOuoz1Oh3WZ5MSqyrRbv9N3HtqJLtUi/hRgo/8dVqVhSAuqDKdMMDOwSnNc8+vky529ccY7LBeONAoFFCuZytiyzx1QpJ2I0ehMkP5qwJSQL98ra8BKdSSCuV3ZYZ7bFFCCWc8d/t+dVLZDAj8BA9vqljdjBGJyh9lqMzse8VAxaOKaD0IzJ1W+TolUx3wFYMxY/gtbge6n/Jwyv5YV+S2GfSVgqoxiqVR2AnVJtfNIApRXY8bVYVJk0/J31UG3a541ro7h+zjAFLOQL6n8ljPYQ5ZD3aMabjoNqbNhqsvDlyBOzPhWwH4ABEedIm9NcbAAAAAASUVORK5CYII=" style="display: block;"></div>
+    </div>
+    <div class="left_line"><img src="{dede:global.cfg_templets_skin/}/images/left_line.png"></div>
+    <div class="kongjian_share"> <span class="kongjian_share_img"><img src="{dede:global.cfg_templets_skin/}/images/kongjian_share.png"></span> <span class="kongjian_share_text">Qzone</span> </div>
+    <div class="weibo_share"> <span class="weibo_share_img"><img src="{dede:global.cfg_templets_skin/}/images/weibo_share.png"></span> <span class="weibo_share_text">微博</span> </div>
+    <div class="weixin_share"> <span class="weixin_share_img"><img src="{dede:global.cfg_templets_skin/}/images/weixin_share.png"></span> <span class="weixin_share_text">微信</span> <span class="weixin_share_scan" id="weixin_share_scan" title="http://tech.tom.com/201804/1184009349.html">
+      <canvas width="70" height="70" style="display: none;"></canvas>
+      <img alt="Scan me!" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAE3UlEQVR4Xu1c2ZLiMAyE//9opmAnQRF92UPVcngfM4mPltTdMsmeT6fT5RT+u1z+3Xo+nw9PXK/3a/WG7bnt2vXefo2Ny5am5kNzp/fva7wCgxbZF1Q3s01Sn0NgqU2pOev4aC60tus1N2a6z1uQFjBHmLdAHIBB6VbLR5VSLZMeUVRK2z0uij1jUDYpJkjWX7NtAdPQ7EGfyhgUIcUxiqxRREMt2Ak/4TrEkYqknwKMKsE6uSsDV1ZVuZyqKSV0lPFAvu4BtvCPB0al8GgqovR2copIO/EfKntGSxWS7wLmbl5vHJOSXWduJYXVDaPnkAyn923ymo6BXLXb8zmyvW2UhFMcXykfk46fkLUDgLrzBQyG5pAxLsqqlJLIOCJMGtF6D1sPsgjIs6gSW8C0k4K9tbmWUuJaU/lV3bDjjpEOPSXUVCA6590yZgFzL7QdSARM7Tb31CoplxoqpjyMS2YMYOeTZ7nzg49x5ZKkOiolR+qKuJONjh4t1GB3At//Vg3eAuYeImvwlDzOmjQ0Juqc3dwo2ok7V/Sw90rO4LnFIT5iiqE28nLAoDNf1Em7wyDUtzxIIPAMSdSROXPS37NCrb8GF2ZM3Zxq0JJJUROJHGnKa6nLZWSKCL6uEfoYtNGvB6aWkpJa513+IskJibv5N47q97l1UbJewBx/Xd2BYj4GSZpysqNnI2knnXKLU0fGeWwd1Pl+PTDIxzgD1hme1f+InVdtAfM4Ke8o2zDUElQfk7hElMbOZyREj9aB+hzV+6g+SlkFWEoLmN+3HZLSQOmM0l+1EK4lUNnZ52LlzkrSufmH8dHPJ44blAJ9NDCOCJGJSnoeJ+l/PUl0FsD9vVYFPXZIDpxUX6L6kLqAqhjJnMolq3J3pdRBW8D8Ig2BSSM10ocw76HK1JUayjQnHOjEoD5D+bQehqdnFqkrVmc0CKCXA2ZUCp152yKbbHREonsWokyfleuHUkoPwxNGV4vq6avOe9xRwea0ExVT5I4IeQ/UAga/1H34JRL1FTXSKnWT8nJjpSLQM8bZhl7aiWtewPx+BgBbglGLn5I1UyXW1Soe68aONbose1QnDa2Fe2U+Sjvyu/bHAIPMkPM2W7132VUtAQN7VPkSn6QOs/raDxyYHoYnbrGTK3PKI6WUljlzwLOCAd8Md1mSGDfGASMZpiLq2oPONS5zHjiMnccg88QMFTNKIxlTQUClpgwhMpaJ9Cuw4Hu+jB++Dpj04IlZ/rT0Zk0gKilH4OokIDKEjHyTPkSlogKrZuSov6jqpzaPfE/ihQ69EiKqBQz4WDQlUxQ95YUcqSalNjOGogDKm+mLQ9IMlc+FPwYY96qZksIZ09frvDvmPiZzw0g50VpnedC+nPi1wMx8r5R014inkEym15TK1L+NeC3ZbrjuWsmjIt/Ue4z2MoxIGXBpKfWSnvpSH2WMijzikdle5r8Ao+SSSThTK3WOo8Zy4yUN7HUMdYShSHp7buq7a2X+VHa40mOKVTf6VsAoj+NSPzWJCWiK11AborLqaRnjyrAuWrnXmfsSDmPlEzlftznWlTKzxQj27YBRaV8Js0eISWLS/ToPonxJ4m1QCaoS2oP5Fx/jPMjbA5MSJFMElk3q/j6ny7oehPQEIMkOtP+p/8JAGTykMuj+VwfmBx365hbjc9AvAAAAAElFTkSuQmCC" style="display: block;"></span> </div>
+  </div>
+
+  <div class="content_body_center" id="content_body_center">
+    <div class="content_news_box">
+      <div class="news_box_title">
+        <h2>{dede:field.title/}</h2>
+      </div>
+      <!-- /title -->
+      <div class="news_box_infor"> <small>时间:</small>{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}<small>来源:</small>{dede:field.source/} <small>作者:</small>{dede:field.writer/} <small>点击:</small> 
+        <script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script> 
+        次</div>
+      <!-- /info --> 
+      {dede:field.description runphp='yes'}
+      if(@me<>'' )@me = '
+      <div class="news_box_text">'.@me.'</div>
+      ';
+      {/dede:field.description}
+      <div class="news_box_operation">
+        <table width='100%'>
+          <tr>
+            <td><div id="contentMidPicAD" style="float:right; clear:both; top:0; vertical-align:top;">{dede:mda name='250x250_SSP'/}</div>
+              {dede:field.body/}
+              {dede:field.vote/}
+              (责任编辑：{dede:adminname/})</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    
+    <!-- app分享-->
+    <div class="news_box_share" id="news_box_share">
+      <div id="sharetxt" class="share_title"> <span>————</span>&nbsp;&nbsp;&nbsp;&nbsp;分享到&nbsp;&nbsp;&nbsp;&nbsp;<span>————</span> </div>
+      <div id="sharebtn4" class="contect_share">
+        <div class="share_platform">
+          <div class="share_weixin"><a id="wx" onclick="shareToWx()">
+            <div><img src="{dede:global.cfg_templets_skin/}/images/weixin3.png"></div>
+            <div class="share_text">微信好友</div>
+            </a> </div>
+          <div class="share_quan"><a id="pyq" onclick="shareToWxpyq()">
+            <div><img src="{dede:global.cfg_templets_skin/}/images/quan3.png"></div>
+            <div class="share_text">朋友圈</div>
+            </a> </div>
+          <div class="share_qq"><a id="qq" onclick="shareToQQ()">
+            <div><img src="{dede:global.cfg_templets_skin/}/images/QQ3.png"></div>
+            <div class="share_text">QQ好友</div>
+            </a> </div>
+          <div class="share_kongjian"><a id="qzone" onclick="shareToQzone()">
+            <div><img src="{dede:global.cfg_templets_skin/}/images/kongjian3.png"></div>
+            <div class="share_text">QQ空间</div>
+            </a> </div>
+          <script id="app" type="text/javascript">var url = location.href; function shareToWx(){var qrcode = document.getElementById('qrcode'); qrcode.innerHTML = '<img src="http://qr.liantu.com/api.php?text='+ url +'" width="200" height="200" />'; qrcode.style.display = 'block'; qrcode.onclick = function(){qrcode.style.display = 'none'; } } function shareToWxpyq(){var qrcode = document.getElementById('qrcode'); qrcode.innerHTML = '<img src="http://qr.liantu.com/api.php?text='+ url +'" width="200" height="200" />'; qrcode.style.display = 'block'; qrcode.onclick = function(){qrcode.style.display = 'none'; } } function shareToQQ(){location.href = 'http://connect.qq.com/widget/shareqq/index.html?url='+url; } function shareToQzone(){location.href = 'http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+url; }</script> 
+        </div>
+      </div>
+    </div>
+    <div class="news_box_banner_pc"><img src="{dede:global.cfg_templets_skin/}/images/pc_content.jpg"></div>
+  </div>
+	
+  <div class="content_body_right" id="content_body_right">
+<div class="list-container" id="list-container" style="display: block;">
+      <div class="pic_news_title">相关推荐</div>
+      {dede:arclist row=5 orderby=click} <span class="item_left_01"></span>
+      <p><a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></p>
+      {/dede:arclist} </div>
+    <div class="body_right_banner" id="body_right_banner" style="display: block;">
+      <div class="guanggao">广告</div>
+      {dede:arclist  typeid='40' row=1 orderby=click} <a href="[field:arcurl/]"><img src="[field:litpic/]"></a></div>
+    <div class="recommend_pic_news" id="recommend_pic_news" style="display: block;">
+      <div class="pic_news_title">热门推荐</div>
+      {dede:arclist flag='c' titlelen=42 row=4}
+  <div class="pic_news01"><a href="[field:arcurl/]" target="_blank" title="[field:title/]"><img src="[field:litpic/]" width="270" height="152">
+    <p class="pic_news01_title">[field:title/]</p>
+  </a> {/dede:arclist} </div>
+    </div>
+    {/dede:arclist} </div>
+</div>
+
+<a id="back_top" href="javascript:scroll(0,0)"></a> <a class="ina_fhdb" id="ina_fhdb" href="javascript:scroll(0,0)" style="display: none;"><img src="./坚果3获更新：加入倒转手机快速自拍功能_TOM科技_files/fhdb.png"></a> 
+<!--  内容页底部信息--> 
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/foot.js"></script>
+<div class="content_bottom_box">
+  <div class="content_bottom">
+    <div class="content_bottom_line"></div>
+    <div class="content_bottom1"> <a href="http://www.tomgroup.com/chs/" target="_blank">TOM集团</a> <a href="http://www.ule.com/?adid=im_tom_footer" target="_blank">邮乐购物</a> <a href="http://www.tom.com/partner/partner.html" target="_blank">合作伙伴</a> <a href="http://www.tom.com/partner/adserver.html" target="_blank">广告服务</a> <a href="http://www.tom.com/partner/jointom.html" target="_blank">加入TOM</a> </div>
+</div>
+    <div class="content_bottom2">Copyright © 2018 TOM.COM Corporation, All Rights Reserved 雷霆万钧版权声明</div>
+    <div class="content_bottom3">违法和不良信息举报电话：010-85181169&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;举报邮箱：<a href="mailto:jubao@tomonline-inc.com" style="color:#333;">jubao@tomonline-inc.com</a></div>
+  </div>
+</div>
+
+<!--[if !IE]><!--> 
+<script type="text/javascript">
+		var ua = navigator.userAgent;
+		var regCheck = /Tom/g;
+		if(regCheck.test(ua)){
+			var contect_title=$(".news_box_title").text();//标题
+			var oMeta = document.getElementsByTagName('meta')[2];
+			//var oMeta = document.getElementsByTagName('meta')[1];
+			var content_description=oMeta.content ;//摘要
+			var content_url=window.location.href;//url
+			var oMeta1 = document.getElementsByTagName('meta')[4];
+			//var oMeta1 = document.getElementsByTagName('meta')[3];
+			var content_imageurl=""
+			if(oMeta1.content==""){
+				content_imageurl="http://www.tom.com/system/modules/my.opencms.news/resources/pc/pic/tom_icon200.png";
+			}else{
+				//content_imageurl=""+oMeta1.content ;//缩略图
+				content_imageurl=oMeta1.content.replace("85180006pimgs", "85180006mimgs") ;//缩略图
+			}
+			var test = 'function shareToWx(){var title = contect_title; var digest = content_description; var url = content_url; var message = "wx"; var imageurl = content_imageurl; var sharecontent = new Array(title,digest,url,message,imageurl); TomShareInterface.shareToClient(sharecontent); } function shareToWxpyq(){var title = contect_title+"_tom.com"; var digest =content_description; var url = content_url; var message = "pyq"; var imageurl = content_imageurl; var sharecontent = new Array(title,digest,url,message,imageurl); TomShareInterface.shareToClient(sharecontent); } function shareToQQ(){var title = contect_title; var digest = content_description;var url = content_url; var message = "qq"; var imageurl = content_imageurl; var sharecontent = new Array(title,digest,url,message,imageurl); TomShareInterface.shareToClient(sharecontent); } function shareToQzone(){var title = contect_title;var digest = content_description; var url = content_url; var message = "qzone"; var imageurl = content_imageurl; var sharecontent = new Array(title,digest,url,message,imageurl); TomShareInterface.shareToClient(sharecontent); } function shareopen(){var title = contect_title+"_tom.com"; var digest = content_description; var url = content_url; var message = "dialog"; var imageurl = content_imageurl; var sharecontent = new Array(title,digest,url,message,imageurl); TomShareInterface.shareToClient(sharecontent); }';
+			document.getElementById('app').innerHTML = test; 
+			document.getElementById("sharebtn").style.display="block";
+			document.getElementById("news_box_share").style.display="block"; 
+			document.getElementById("back_hot").style.display="none";
+			document.getElementById("back_arrow").style.display="block";
+		}else{
+			//document.getElementById("sharebtn4").style.display="none"; 
+			var sj = "var url = location.href; function shareToWx(){var qrcode = document.getElementById('qrcode'); qrcode.innerHTML = '<img src=\"http://qr.liantu.com/api.php?text='+ url +'\" width=\"200\" height=\"200\" />'; qrcode.style.display = 'block'; qrcode.onclick = function(){qrcode.style.display = 'none'; } } function shareToWxpyq(){var qrcode = document.getElementById('qrcode'); qrcode.innerHTML = '<img src=\"http://qr.liantu.com/api.php?text='+ url +'\" width=\"200\" height=\"200\" />'; qrcode.style.display = 'block'; qrcode.onclick = function(){qrcode.style.display = 'none'; } } function shareToQQ(){location.href = 'http://connect.qq.com/widget/shareqq/index.html?url='+url; } function shareToQzone(){location.href = 'http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+url; }";
+			document.getElementById('app').innerHTML = sj;
+		}
+		$(document).ready(function(){
+			var loadingMask = document.getElementById('loadingimg');
+			loadingMask.style.display="none";
+		});
+</script> 
+<!--<![endif]--> 
+
+<!--[if gte IE 9]>
+   <script type="text/javascript">
+		var ua = navigator.userAgent;
+		var regCheck = /Tom/g;
+		if(regCheck.test(ua)){
+			var contect_title=$(".news_box_title").text();//标题
+			var oMeta = document.getElementsByTagName('meta')[2];
+			//var oMeta = document.getElementsByTagName('meta')[1];
+			var content_description=oMeta.content ;//摘要
+			var content_url=window.location.href;//url
+			var oMeta1 = document.getElementsByTagName('meta')[4];
+			//var oMeta1 = document.getElementsByTagName('meta')[3];
+			var content_imageurl=""
+			if(oMeta1.content==""){
+				content_imageurl="http://www.tom.com/system/modules/my.opencms.news/resources/pc/pic/tom.com-logo.png";
+			}else{
+				//content_imageurl=""+oMeta1.content ;//缩略图
+				content_imageurl=oMeta1.content.replace("85180006pimgs", "85180006mimgs") ;//缩略图
+			}
+			var test = 'function shareToWx(){var title = contect_title; var digest = content_description; var url = content_url; var message = "wx"; var imageurl = content_imageurl; var sharecontent = new Array(title,digest,url,message,imageurl); TomShareInterface.shareToClient(sharecontent); } function shareToWxpyq(){var title = contect_title+"_tom.com"; var digest =content_description; var url = content_url; var message = "pyq"; var imageurl = content_imageurl; var sharecontent = new Array(title,digest,url,message,imageurl); TomShareInterface.shareToClient(sharecontent); } function shareToQQ(){var title = contect_title; var digest = content_description;var url = content_url; var message = "qq"; var imageurl = content_imageurl; var sharecontent = new Array(title,digest,url,message,imageurl); TomShareInterface.shareToClient(sharecontent); } function shareToQzone(){var title = contect_title;var digest = content_description; var url = content_url; var message = "qzone"; var imageurl = content_imageurl; var sharecontent = new Array(title,digest,url,message,imageurl); TomShareInterface.shareToClient(sharecontent); } function shareopen(){var title = contect_title+"_tom.com"; var digest = content_description; var url = content_url; var message = "dialog"; var imageurl = content_imageurl; var sharecontent = new Array(title,digest,url,message,imageurl); TomShareInterface.shareToClient(sharecontent); }';
+			document.getElementById('app').innerHTML = test; 
+			document.getElementById("sharebtn").style.display="block";
+			document.getElementById("news_box_share").style.display="block"; 
+			document.getElementById("back_hot").style.display="none";
+			document.getElementById("back_arrow").style.display="block";
+		}else{
+			//document.getElementById("sharebtn4").style.display="none"; 
+			var sj = "var url = location.href; function shareToWx(){var qrcode = document.getElementById('qrcode'); qrcode.innerHTML = '<img src=\"http://qr.liantu.com/api.php?text='+ url +'\" width=\"200\" height=\"200\" />'; qrcode.style.display = 'block'; qrcode.onclick = function(){qrcode.style.display = 'none'; } } function shareToWxpyq(){var qrcode = document.getElementById('qrcode'); qrcode.innerHTML = '<img src=\"http://qr.liantu.com/api.php?text='+ url +'\" width=\"200\" height=\"200\" />'; qrcode.style.display = 'block'; qrcode.onclick = function(){qrcode.style.display = 'none'; } } function shareToQQ(){location.href = 'http://connect.qq.com/widget/shareqq/index.html?url='+url; } function shareToQzone(){location.href = 'http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+url; }";
+			document.getElementById('app').innerHTML = sj;
+		}
+		$(document).ready(function(){
+			var loadingMask = document.getElementById('loadingimg');
+			loadingMask.style.display="none";
+		});
+</script>
+ <![endif]--> 
+<script>
+ 	(function() {
+		//百度自动推送
+		var bp = document.createElement('script');
+		var curProtocol = window.location.protocol.split(':')[0];
+		if (curProtocol === 'https') {
+			bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+		} else {
+			bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+		}
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(bp, s);
+	})();
+ </script>
+</body>
+</html>
