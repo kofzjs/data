@@ -1,0 +1,53 @@
+<!-- //底部模板 -->
+
+<div class="mztime"> <span> <img src="{dede:global.cfg_cmspath/}/images/mztime.png"/>门诊时间 </span> <a href="javascript:void(0)" onClick="onKST();">8:00-20:00 就诊提前预约</a> </div>
+<div class="zxmes">
+  <h3 class="zxh3"><span>在线预约</span></h3>
+  <form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+    <input type="hidden" name="action" value="post">
+    <input type="hidden" name="diyid" value="1">
+    <input type="hidden" name="do" value="2">
+    <div class="zxli">
+      <label for=""><span class="cred">*</span>您的姓名：</label>
+      <input type="text" id="name" name="name" value="" placeholder="请输入您的姓名">
+    </div>
+    <div class="zxli">
+      <label for=""><span class="cred">*</span>联系电话：</label>
+      <input type="text" id="tel" name="tel" value="" placeholder="请输入您的联系方式">
+    </div>
+    <div class="zxli">
+      <label for=""><span class="cred">*</span>科室选择：</label>
+      <select class="zxsel" id="department" name="department">
+        <option value="">选择科室</option>
+        <option value="妇科">妇科</option>
+        <option value="产科">产科</option>
+        <option value="计生科">计生科</option>
+      </select>
+    </div>
+    <div class="zxli">
+      <label for=""><span class="cred">*</span>预约专家：</label>
+      <select class="zxsel" id="zhuanjia" name="zhuanjia">
+        <option>选择专家</option>
+        <option value="李瑞容 ">李瑞容 </option>
+        <option value="林聘英">林聘英</option>
+        <option value="贺志习">贺志习</option>
+      </select>
+    </div>
+    <div class="zxsub">
+    <input type="hidden" name="dede_fields" value="name,text;tel,text;keshi,select;zuanjia,select">
+    <input type="hidden" name="dede_fieldshash" value="e73ad4506429923f4551fecc4cf23158">
+  
+      <input type="submit" name="submit" value="提 交" class="zxsub2">
+      &nbsp;
+      <input type="reset" name="reset" value="重 置" class="zxsub1">
+    </div>
+  </form>
+</div>
+<footer class="foot2 clearfix">
+  <div class="footl"> <a href="{dede:global.cfg_cmspath/}/a/laiyuanluxian/2018/0321/30.html"> <img class="bimg" src="{dede:global.cfg_cmspath/}/images/mapl1.jpg"/> </a> </div>
+  <div class="footr">
+    <p>24小时急诊医院(节假日不休) <span>日常门诊时间：08:00-20:00</span></p>
+    <p>24小时免费电话 <a class="telbot" href="tel:07712220333">0771-2220333</a> </p>
+    <p>医院地址 <span>南宁市江南区五一路156号</span> <a href="{dede:global.cfg_cmspath/}/a/laiyuanluxian/2018/0321/30.html">>>乘车路线 </a></p>
+  </div>
+</footer>
